@@ -1,2 +1,2 @@
-# pollster.eu
-Pollster.eu
+# Pollster.eu
+Polls and bets from Europe

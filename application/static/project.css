@@ -1,0 +1,8 @@
+.header small {
+    color: #333;
+}
+.tag-label {
+    font-size: 0.25em;
+    position: relative;
+    bottom: 3px;
+}

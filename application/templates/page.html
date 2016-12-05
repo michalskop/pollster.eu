@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{ server_settings.app_url }}static/bootstrap.min.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="{{ server_settings.app_url }}static/jquery-2.2.4.min.js"></script>
+    <script src="{{ server_settings.app_url }}static/bootstrap.min.js"></script>
+    {% include 'include_in_head.html' %}
+    <link href="{{ server_settings.app_url }}static/project.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-static-top hidden-print">
+        <div class="container">
+            <div class="navbar-header header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-lg"></i>
+                </button>
+                <a class="navbar-brand" href="/"><i class="fa fa-bar-chart"></i> pollster.eu</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ texts['page_name'] }} <i class="fa fa-caret-down"></i></a>
+                        {# <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Česká republika</a></li>
+                            <li><a href="#">Slovensko</a></li>
+                        </ul> #}
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">{{ app_settings['languages'][locale]['name'] }} <i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {% for code in app_settings['languages'] %}
+                                <li><a href="?lang={{ app_settings['languages'][code]['code'] }}">{{ app_settings['languages'][code]['name'] }}</a>
+                            {% endfor %}
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        {% for block in blocks %}
+            <h2 class="page-header">{{ block['meta']['name'] }} <small>{{ block['meta']['subname'] }}</small>
+                <span class="badge">{{ block['meta']['date'] }}</span>
+                {% for tag in block['meta']['tags'] %}
+                    <span class="label label-info tag-label">
+                        {{ tag }}
+                    </span>
+                {% endfor %}
+            </h2>
+            <div class="row">
+                <div class="col-md-9 col-md-push-3">
+                    {{ block['html']|safe}}
+                </div>
+                <div class="col-md-3 col-md-pull-9">
+                    {{ block['meta']['description']|safe }}
+                    <p>
+                    <a href="#"><span class="fa-stack fa-lg">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-twitter fa-stack-1x"></i>
+                    </span></a>
+                    <a href="{% include 'block-fb-link.js2' %}"><span class="fa-stack fa-lg">
+                        <i class="fa fa-square-o fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x"></i>
+                    </span></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>

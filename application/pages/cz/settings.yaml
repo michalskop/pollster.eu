@@ -1,0 +1,10 @@
+# settings for Czech republic page
+
+code: cz
+
+# subpages
+subpages:
+    - cz_president_2018
+
+# external + local css, js
+include_files: {}

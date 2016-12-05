@@ -1,0 +1,16 @@
+---
+# English texts
+picture_header: Next Czech President?
+picture_header_small: Chances to win in 2018
+picture_info: Estimates based on odds from Fortuna and Tipsport
+name: Election prediction
+subname: probability of winning
+description: >
+    <p>This prediction estimates the results of the elections.
+    <p>The prediction is based on candidates' odds in Fortuna and Tipsport.
+fb: Current chances to win the Czech presidential elections 2017/2018:{first_candidate} has chance of {first_candidate_percents}%, {second_candidate} has chance of {second_candidate_percents}%.
+twitter: Czech president 2018-current chances:{first_candidate} {first_candidate_percents}%, {second_candidate} {second_candidate_percents}%. \#volby \#CZE
+tags:
+    - Experimental
+slug: czech-presidential-elections-2017-2018
+...

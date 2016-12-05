@@ -1,0 +1,22 @@
+{% for type in settings.include_files %}
+    {% if type == "external_css" %}
+        {% for item in settings.include_files[type] %}
+            <link href="{{ item }}" rel="stylesheet" />
+        {% endfor %}
+    {% endif %}
+    {% if type == "local_css" %}
+        {% for item in settings.include_files[type] %}
+            <link href="{{ server_settings.app_url }}static/{{ item }}" rel="stylesheet" />
+        {% endfor %}
+    {% endif %}
+    {% if type == "external_js" %}
+        {% for item in settings.include_files[type] %}
+            <script src="{{ item }}"></script>
+        {% endfor %}
+    {% endif %}
+    {% if type == "local_js" %}
+        {% for item in settings.include_files[type] %}
+            <script src="{{ server_settings.app_url }}static/{{ item }}"></script>
+        {% endfor %}
+    {% endif %}
+{% endfor %}

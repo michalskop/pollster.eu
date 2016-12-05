@@ -1,0 +1,182 @@
+[{
+    "name": "Miloš Zeman",
+    "abbreviation": "Zeman",
+    "image": "zeman.jpg",
+    "fortuna_identifier": 60210,
+    "tipsport_identifier": 4
+}, {
+    "name": "Michal Horáček",
+    "abbreviation": "Horáček",
+    "image": "horacek.jpg",
+    "tipsport_identifier": 5,
+    "fortuna_identifier": 60211
+}, {
+    "name": "Jan Švejnar",
+    "abbreviation": "Švejnar",
+    "image": "svejnar.jpg",
+    "tipsport_identifier": 7,
+    "fortuna_identifier": 60212
+}, {
+    "name": "Tomáš Halík",
+    "abbreviation": "Halík",
+    "image": "halik.jpg",
+    "tipsport_identifier": 19,
+    "fortuna_identifier": 60213
+}, {
+    "name": "Jiří Pospíšil",
+    "abbreviation": "Pospíšil",
+    "image": "pospisil.jpg",
+    "tipsport_identifier": 6,
+    "fortuna_identifier": 60292
+}, {
+    "name": "Jiří Dienstbier",
+    "abbreviation": "Dienstb.",
+    "image": "dienstbier.jpg",
+    "tipsport_identifier": 21,
+    "fortuna_identifier": 60293
+}, {
+    "name": "Pavel Rychetský",
+    "abbreviation": "Rychetský",
+    "image": "rychetsky.jpg",
+    "tipsport_identifier": 8,
+    "fortuna_identifier": 60294
+}, {
+    "name": "Zuzana Roithová",
+    "abbreviation": "Roithová",
+    "image": "roithova.jpg",
+    "tipsport_identifier": 18,
+    "fortuna_identifier": 60295
+}, {
+    "name": "Vladimír Dlouhý",
+    "abbreviation": "Dlouhý",
+    "image": "dlouhy.jpg",
+    "tipsport_identifier": 17,
+    "fortuna_identifier": 60296
+}, {
+    "name": "Andrej Babiš",
+    "abbreviation": "Babiš",
+    "image": "babis.jpg",
+    "tipsport_identifier": 12,
+    "fortuna_identifier": 60297
+}, {
+    "name": "Tomio Okamura",
+    "abbreviation": "Okamura",
+    "fortuna_identifier": 60298
+}, {
+    "name": "Jaroslav Kubera",
+    "abbreviation": "Kubera",
+    "tipsport_identifier": 24,
+    "fortuna_identifier": 60299
+}, {
+    "name": "Václav Klaus",
+    "abbreviation": "Klaus",
+    "image": "klaus.jpg",
+    "tipsport_identifier": 13,
+    "fortuna_identifier": 60300
+}, {
+    "name": "Livia Klausová",
+    "abbreviation": "Klausová",
+    "fortuna_identifier": 60301
+}, {
+    "name": "Václav Klaus ml.",
+    "abbreviation": "Klaus ml.",
+    "fortuna_identifier": 60302
+}, {
+    "name": "Zdeněk Škromach",
+    "abbreviation": "Škromach",
+    "fortuna_identifier": 60303
+}, {
+    "name": "Petr Pavel",
+    "abbreviation": "Pavel",
+    "fortuna_identifier": 60304
+}, {
+    "name": "Jaromír Jágr",
+    "abbreviation": "Jágr",
+    "fortuna_identifier": 60305
+}, {
+    "name": "Miroslav Sládek",
+    "abbreviation": "Sládek",
+    "fortuna_identifier": 60306
+}, {
+    "name": "Karel Gott",
+    "abbreviation": "Gott",
+    "fortuna_identifier": 60307
+}, {
+    "name": "Marek Eben",
+    "abbreviation": "Eben",
+    "fortuna_identifier": 60308
+}, {
+    "name": "Milan Kohout",
+    "abbreviation": "Kohout",
+    "fortuna_identifier": 60309
+}, {
+    "name": "Jana Yngland Hrušková",
+    "abbreviation": "Hrušková",
+    "fortuna_identifier": 60310
+}, {
+    "name": "Marek Hilšer",
+    "abbreviation": "Hilšer",
+    "fortuna_identifier": 60311
+}, {
+    "name": "Vladimír Špidla",
+    "abbreviation": "Špidla",
+    "fortuna_identifier": 60312
+}, {
+    "name": "Martin Stropnický",
+    "abbreviation": "Stropnický",
+    "image": "stropnicky.jpg",
+    "tipsport_identifier": 15,
+    "fortuna_identifier": 60313
+}, {
+    "name": "Marek Dalík",
+    "abbreviation": "Dalík",
+    "fortuna_identifier": 60314
+}, {
+    "name": "Daniel Herman",
+    "abbreviation": "Herman",
+    "image": "herman.jpg",
+    "tipsport_identifier": 9,
+    "fortuna_identifier": 60321
+}, {
+    "name": "Karel Schwarzenberg",
+    "abbreviation": "Schwarz.",
+    "image": "schwarzenberg.jpg",
+    "tipsport_identifier": 16,
+    "fortuna_identifier": 60322
+}, {
+    "name": "Jan Kraus",
+    "abbreviation": "Kraus",
+    "fortuna_identifier": 60323
+}, {
+    "name": "Luděk Sobota",
+    "abbreviation": "Sobota",
+    "fortuna_identifier": 60382
+}, {
+    "name": "Igor Sládek",
+    "abbreviation": "Sládek",
+    "image": "sladek.jpg",
+    "fortuna_identifier": 60483
+}, {
+    "name": "Petr Robejšek",
+    "abbreviation": "Robejšek",
+    "image": "robejsek.jpg",
+    "fortuna_identifier": 60487,
+    "tipsport_identifier": 49
+}, {
+    "name": "Jan Keller",
+    "abbreviation": "Keller",
+    "tipsport_identifier": 23
+}, {
+    "name": "Dagmar Havlová",
+    "abbreviation": "Havlová",
+    "tipsport_identifier": 22
+}, {
+    "name": "Šimon Pánek",
+    "abbreviation": "Pánek",
+    "tipsport_identifier": 14
+},
+{
+    "name": "Bohuslav Sobotka",
+    "abbreviation": "Sobotka",
+    "tipsport_identifier": 11
+}]

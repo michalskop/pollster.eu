@@ -1,0 +1,16 @@
+---
+# languages
+languages:
+    cs_CZ:
+        code: cs_CZ
+        name: čeština
+    en_US:
+        code: en_US
+        name: English
+# pages
+pages:
+    - cz
+
+# fb app id
+fb_appid: "558663910989985"
+...

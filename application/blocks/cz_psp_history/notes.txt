@@ -1,0 +1,23 @@
+THE ONE - MetricsGraphics.js
+http://metricsgraphicsjs.org/examples.htm
+    https://github.com/mozilla/metrics-graphics/issues/550
+
+
+List of d3 libraries:
+https://github.com/wbkd/awesome-d3
+
+Leaflet-D3
+https://github.com/Asymmetrik/leaflet-d3
+
+Cartograms-D3
+http://prag.ma/code/d3-cartogram/#popest/2011
+
+tooltips  D3:
+http://darkmarmot.github.io/kodama/
+http://bl.ocks.org/Caged/6476579
+
+xkcd D3
+http://xkcdgraphs.com/
+
+info-charts D3
+https://github.com/ahoiin/Fancycharts.js

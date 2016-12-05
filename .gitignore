@@ -1,0 +1,9 @@
+dev
+dev/*
+webcache
+__pycache__
+*~lock*
+.Rhistory
+/settings.py
+server_settings.json
+*.pyc
