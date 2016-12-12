@@ -6,4 +6,5 @@ __pycache__
 .Rhistory
 /settings.py
 server_settings.json
+server_settings.py
 *.pyc

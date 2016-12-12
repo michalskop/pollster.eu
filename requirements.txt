@@ -1,1 +1,2 @@
 Flask>=0.11.1
+flask_cache>=0.13.1
