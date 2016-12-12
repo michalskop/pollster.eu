@@ -1,5 +1,7 @@
+import os
 import sys
-# print (sys.path)
-sys.path.insert(0,'/home/michal/project/pollster.eu')
+
+dir_path = os.path.dirname(os.path.realpath(__file__))
+sys.path.insert(0,dir_path)
 
 from pollster import app as application
