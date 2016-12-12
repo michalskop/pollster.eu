@@ -23,6 +23,8 @@ sudo apt-get install libapache2-mod-wsgi-py3
 sudo apt-get install python3-lxml
 sudo pip3 install datapackage
 
+sudo pip3 install babel
+
 sudo apt-get install cutycapt
 sudo apt install xvfb
 ```
