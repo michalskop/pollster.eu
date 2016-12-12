@@ -7,14 +7,14 @@ description: '<p>This prediction estimates the results of the elections. <p>The 
 
   '
 fb: "Current chances to win the Czech presidential elections 2017/2018:Milo\u0161\
-  \ Zeman has chance of 36%, Michal Hor\xE1\u010Dek has chance of 24%."
+  \ Zeman has chance of 34%, Michal Hor\xE1\u010Dek has chance of 23%."
 language: en_US
 name: Election prediction
-picture: pictures/picture.en_US.1481504775.2346501.png
+picture: pictures/picture.en_US.1481517282.8193917.png
 slug: czech-presidential-elections-2017-2018
 subname: probability of winning
 tags: [Experimental]
-thumbnail: pictures/thumbnail.en_US.1481504775.2346501.png
-timestamp: 1481504775.2346501
-twitter: "Czech president 2018-current chances:Milo\u0161 Zeman 36%, Michal Hor\xE1\
-  \u010Dek 24%. \\#volby \\#CZE"
+thumbnail: pictures/thumbnail.en_US.1481517282.8193917.png
+timestamp: 1481517282.8193917
+twitter: "Czech president 2018-current chances:Milo\u0161 Zeman 34%, Michal Hor\xE1\
+  \u010Dek 23%. \\#volby \\#CZE"

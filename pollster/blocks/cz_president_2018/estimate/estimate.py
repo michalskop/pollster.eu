@@ -3,14 +3,21 @@
 import datapackage
 import json
 from operator import itemgetter
+import os
 import settings
+
+# get path
+try:
+    dir_path = os.path.dirname(os.path.realpath(__file__)) + "/"
+except:
+    dir_path = ""
 
 # read datapackages
 tipsport_dp = datapackage.DataPackage(settings.tipsport_dp_url)
 fortuna_dp = datapackage.DataPackage(settings.fortuna_dp_url)
 
 # read candidates' info
-with open("candidates.json") as fin:
+with open(dir_path + "candidates.json") as fin:
     candidates = json.load(fin)
 
 # get last odds
@@ -111,7 +118,7 @@ for candidate in candidates:
     candidate['probability'] = (candidate['tipsport_probability'] + candidate['fortuna_probability']) / 2
 
 # save the file
-with open("candidates_estimated.json","w") as fout:
+with open(dir_path + "candidates_estimated.json","w") as fout:
     json.dump(sorted(candidates, key=itemgetter('probability'),reverse=True),fout)
 
 # find missing images in TOP12
@@ -127,5 +134,5 @@ news_string = ""
 for k in news:
     if news[k] > 0:
         news_string = news_string + "new " + k + ": " + str(news[k]) + ","
-with open("news.txt","w") as fout:
+with open(dir_path + "news.txt","w") as fout:
     fout.write(news_string)

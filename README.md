@@ -17,8 +17,14 @@ setup server_settings.py
 
 ```
 sudo pip3 install Flask
-# should install into /usr/local/lib/python3.5/dist-packages/ !!!s
+# should install into /usr/local/lib/python3.5/dist-packages/ !!!
 sudo apt-get install libapache2-mod-wsgi-py3
+
+sudo apt-get install python3-lxml
+sudo pip3 install datapackage
+
+sudo apt-get install cutycapt
+sudo apt install xvfb
 ```
 
 ```
