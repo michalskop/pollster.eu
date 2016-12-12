@@ -12,7 +12,7 @@ cache = Cache(app)
 def get_picture(page,subpage,filename):
     #print(server_settings.app_dir + "blocks/" + subpage)
     # return send_from_directory("/home/michal/project/pollster.eu/application/blocks/cz_president_2018/pictures", filename)
-    return send_from_directory(server_settings.app_dir + "blocks/" + subpage + "/", filename, as_attachment=False)
+    return send_from_directory(server_settings.app_dir + "blocks/" + subpage + "/pictures/", filename, as_attachment=False)
 
 @app.route('/blocks/<block>/<path:filename>')
 def get_file(block,filename):

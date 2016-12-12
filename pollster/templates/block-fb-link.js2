@@ -1,4 +1,4 @@
-http://www.facebook.com/dialog/feed?
+https://www.facebook.com/dialog/feed?
 app_id={{ app_settings['fb_appid'] }}&
 link={{ server_settings['app_url'] }}?ref=&
 picture={{ url_for('get_picture', page=settings["code"], subpage=block['meta']['code'], filename= block['meta']['picture'],_external=True) }}&
