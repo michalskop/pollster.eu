@@ -3,9 +3,7 @@ content: index.en_US.html
 data: estimate/candidates_estimated.json
 date: Dec 12, 2016
 description: '<p>This prediction estimates the results of the elections. <p>The prediction
-  is based on candidates'' odds in Fortuna and Tipsport.
-
-  '
+  is based on candidates'' odds in Fortuna and Tipsport. <p> Maximum of 12 candidates with highest chance to win is shown.'
 fb: "Current chances to win the Czech presidential elections 2017/2018:Milo\u0161\
   \ Zeman has chance of 34%, Michal Hor\xE1\u010Dek has chance of 23%."
 language: en_US

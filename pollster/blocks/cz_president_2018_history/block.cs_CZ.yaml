@@ -1,0 +1,10 @@
+code: cz_president_2018_history
+content: index.cs_CZ.html
+data: estimate/candidates_estimated.json
+description: "<p>Historický přehled volební predikce ukazuje, jaký byl odhad výsledku voleb v daný den. <p>Volebn\xED predikce je zalo\u017Eena na kurzech na v\xEDt\u011B\zstv\xED jednotliv\xFDch kandid\xE1t\u016F ve Fortun\u011B\_a Tipsportu v daný den.<p>Graf ukazuje pouze kandidáty, jejichž šance někdy dosáhla alespoň 7 %."
+language: cs_CZ
+name: "Historie volební predikce"
+picture: pictures/picture.cs_CZ.1481518124.8156233.png
+slug: volba-prezidenta-cr-2017-2018-historie
+subname: "pravd\u011Bpodobnost v\xEDt\u011Bzstv\xED v čase"
+tags: ["Experiment\xE1ln\xED"]

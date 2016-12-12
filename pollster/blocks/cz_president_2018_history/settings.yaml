@@ -1,0 +1,14 @@
+# settings for cz_president_2018 block
+# will be join with general settings
+
+# block path from app root
+block_path_url: "blocks/cz_president_2018/"
+block_path_dir: "blocks/cz_president_2018/"
+
+# reverse path to app root
+block_reverse_path_dir: "../../../"
+
+# external + local css, js
+include_files:
+    external_css:
+        - "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
