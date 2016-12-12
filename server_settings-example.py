@@ -1,2 +1,2 @@
-app_url = "http://pollster.eu/"
-app_dir = "/home/michal/project/pollster.eu/pollster/"
+app_url = "https://pollster.eu/"
+app_dir = "/home/projects/pollster.eu/pollster/"
