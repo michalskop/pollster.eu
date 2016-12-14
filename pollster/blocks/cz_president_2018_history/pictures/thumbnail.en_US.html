@@ -3,32 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://pollster.eu/static/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://pollster.eux/static/bootstrap.min.css" rel="stylesheet" />
     
     
     
     
     
         
-            <script src="https://pollster.eu/static/d3.min.js"></script>
+            <script src="http://pollster.eux/static/d3.min.js"></script>
         
-            <script src="https://pollster.eu/static/jquery-3.1.1.slim.min.js"></script>
+            <script src="http://pollster.eux/static/jquery-3.1.1.slim.min.js"></script>
         
-            <script src="https://pollster.eu/static/metricsgraphics.min.js"></script>
+            <script src="http://pollster.eux/static/metricsgraphics.min.js"></script>
         
     
 
     
     
         
-            <link href="https://pollster.eu/static/metricsgraphics.css" rel="stylesheet" />
+            <link href="http://pollster.eux/static/metricsgraphics.css" rel="stylesheet" />
         
     
     
     
 
-    <link href="https://pollster.eu/static/project.css" rel="stylesheet" />
-    <link href="https://pollster.eu/static/thumbnail.css" rel="stylesheet" />
+    <link href="http://pollster.eux/static/project.css" rel="stylesheet" />
+    <link href="http://pollster.eux/static/thumbnail.css" rel="stylesheet" />
 </head>
 <body class="body">
     
@@ -37,18 +37,18 @@
     
     
         
-            <script src="https://pollster.eu/static/d3.min.js"></script>
+            <script src="http://pollster.eux/static/d3.min.js"></script>
         
-            <script src="https://pollster.eu/static/jquery-3.1.1.slim.min.js"></script>
+            <script src="http://pollster.eux/static/jquery-3.1.1.slim.min.js"></script>
         
-            <script src="https://pollster.eu/static/metricsgraphics.min.js"></script>
+            <script src="http://pollster.eux/static/metricsgraphics.min.js"></script>
         
     
 
     
     
         
-            <link href="https://pollster.eu/static/metricsgraphics.css" rel="stylesheet" />
+            <link href="http://pollster.eux/static/metricsgraphics.css" rel="stylesheet" />
         
     
     
@@ -82,7 +82,7 @@ d3.csv("/" + "blocks/cz_president_2018_history/" + 'estimate/candidates_estimate
         data: data,
         width: 765,
         height: 397,
-        right: 60,
+        right: 80,
         target: document.getElementById('chart'),
         // animate_on_load: true,
         missing_is_hidden: true,
@@ -90,7 +90,7 @@ d3.csv("/" + "blocks/cz_president_2018_history/" + 'estimate/candidates_estimate
         y_extended_ticks: true,
         legend: names,
         colors: colors,
-        target: '#chart',
+        target: '#chart_cz_president_2018_history',
         aggregate_rollover: true,
         format: 'percentage',
         decimals: 2
@@ -98,6 +98,6 @@ d3.csv("/" + "blocks/cz_president_2018_history/" + 'estimate/candidates_estimate
 });
 </script>
 
-<div id="chart"></div>
+<div id="chart_cz_president_2018_history" style="position:relative;top:-50px;"></div>
 </body>
 </html>

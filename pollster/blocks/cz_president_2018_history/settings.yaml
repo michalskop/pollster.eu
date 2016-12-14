@@ -1,6 +1,8 @@
 # settings for cz_president_2018 block
 # will be join with general settings
 
+block_code: "cz_president_2018_history"
+
 # block path from app root
 block_path_url: "blocks/cz_president_2018_history/"
 block_path_dir: "blocks/cz_president_2018_history/"

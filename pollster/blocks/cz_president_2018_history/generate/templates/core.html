@@ -27,7 +27,7 @@ d3.csv("/" + "{{ settings['block_path_url'] }}" + 'estimate/candidates_estimated
         data: data,
         width: 765,
         height: 397,
-        right: 60,
+        right: 80,
         target: document.getElementById('chart'),
         // animate_on_load: true,
         missing_is_hidden: true,
@@ -35,7 +35,7 @@ d3.csv("/" + "{{ settings['block_path_url'] }}" + 'estimate/candidates_estimated
         y_extended_ticks: true,
         legend: names,
         colors: colors,
-        target: '#chart',
+        target: '#chart_{{ settings['block_code'] }}',
         aggregate_rollover: true,
         format: 'percentage',
         decimals: 2
@@ -43,4 +43,4 @@ d3.csv("/" + "{{ settings['block_path_url'] }}" + 'estimate/candidates_estimated
 });
 </script>
 
-<div id="chart"></div>
+<div id="chart_{{ settings['block_code'] }}" style="position:relative;top:-50px;"></div>
