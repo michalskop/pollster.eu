@@ -1,16 +1,16 @@
 ---
 # Czech texts
 picture_header: Kdo bude prezidentem ČR?
-picture_header_small: Šance na vítězství v roce 2018
+picture_header_small: Vývoj šancí na vítězství v roce 2018 v čase
 picture_info: Odhady založené na kurzech Fortuny a Tipsportu
-name: Volební predikce
-subname: pravděpodobnost vítězství
+name: Historie volební predikce
+subname: pravděpodobnost vítězství v čase
 description: >
-    <p>Tato volební predikce co nejlépe odhaduje, jak volby skutečně dopadnou.
-    <p>Volební predikce je založena na kurzech na vítězství jednotlivých kandidátů ve Fortuně a Tipsportu.
-fb: Aktuální šance na vítězství v prezidentských volbách 2017/2018:Největší šanci má {first_candidate} {first_candidate_percents}%, potom {second_candidate} {second_candidate_percents}%.
-twitter: Prezident 2018-aktuální šance:{first_candidate} {first_candidate_percents}%, {second_candidate} {second_candidate_percents}%. \#volby
+    <p>Historický přehled volební predikce ukazuje, jaký byl odhad výsledku voleb v daný den. <p>Volební predikce je založena na kurzech na vítězství jednotlivých kandidátů ve Fortuně a Tipsportu v daný den.
+    <p>Graf ukazuje pouze kandidáty, jejichž šance někdy dosáhla alespoň 7 %.
+fb: Vývoj šancí na vítězství v prezidentských volbách 2017/2018.
+twitter: Prezident 2018-vývoj šancí \#volby
 tags:
     - Experimentální
-slug: volba-prezidenta-cr-2017-2018
+slug: volba-prezidenta-cr-2017-2018-historie
 ...

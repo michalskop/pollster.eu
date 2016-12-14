@@ -3,13 +3,15 @@
     "abbreviation": "Zeman",
     "image": "zeman.jpg",
     "fortuna_identifier": 60210,
-    "tipsport_identifier": 4
+    "tipsport_identifier": 4,
+    "color": "red"
 }, {
     "name": "Michal Horáček",
     "abbreviation": "Horáček",
     "image": "horacek.jpg",
     "tipsport_identifier": 5,
-    "fortuna_identifier": 60211
+    "fortuna_identifier": 60211,
+    "color": "blue"
 }, {
     "name": "Jan Švejnar",
     "abbreviation": "Švejnar",
@@ -162,7 +164,8 @@
     "abbreviation": "Robejšek",
     "image": "robejsek.jpg",
     "fortuna_identifier": 60487,
-    "tipsport_identifier": 49
+    "tipsport_identifier": 49,
+    "color": "brown"
 }, {
     "name": "Jan Keller",
     "abbreviation": "Keller",

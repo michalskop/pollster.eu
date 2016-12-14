@@ -1,10 +1,19 @@
 code: cz_president_2018_history
 content: index.cs_CZ.html
 data: estimate/candidates_estimated.json
-description: "<p>Historický přehled volební predikce ukazuje, jaký byl odhad výsledku voleb v daný den. <p>Volebn\xED predikce je zalo\u017Eena na kurzech na v\xEDt\u011B\zstv\xED jednotliv\xFDch kandid\xE1t\u016F ve Fortun\u011B\_a Tipsportu v daný den.<p>Graf ukazuje pouze kandidáty, jejichž šance někdy dosáhla alespoň 7 %."
+date: 14. 12. 2016
+description: "<p>Historick\xFD p\u0159ehled volebn\xED predikce ukazuje, jak\xFD byl\
+  \ odhad v\xFDsledku voleb v dan\xFD den. <p>Volebn\xED predikce je zalo\u017Eena\
+  \ na kurzech na v\xEDt\u011Bzstv\xED jednotliv\xFDch kandid\xE1t\u016F ve Fortun\u011B\
+  \ a Tipsportu v dan\xFD den. <p>Graf ukazuje pouze kandid\xE1ty, jejich\u017E\_\u0161\
+  ance n\u011Bkdy dos\xE1hla alespo\u0148 7 %.\n"
+fb: "V\xFDvoj \u0161anc\xED na v\xEDt\u011Bzstv\xED v prezidentsk\xFDch volb\xE1ch\
+  \ 2017/2018."
 language: cs_CZ
-name: "Historie volební predikce"
-picture: pictures/picture.cs_CZ.1481518124.8156233.png
+name: "Historie volebn\xED predikce"
+picture: pictures/picture.cs_CZ.1481686613.3893569.png
 slug: volba-prezidenta-cr-2017-2018-historie
-subname: "pravd\u011Bpodobnost v\xEDt\u011Bzstv\xED v čase"
+subname: "pravd\u011Bpodobnost v\xEDt\u011Bzstv\xED v \u010Dase"
 tags: ["Experiment\xE1ln\xED"]
+thumbnail: pictures/thumbnail.cs_CZ.1481686613.3893569.png
+timestamp: 1481686613.3893569

@@ -5,6 +5,7 @@ code: cz
 # subpages
 subpages:
     - cz_president_2018
+    - cz_president_2018_history
 
 # external + local css, js
 include_files: {}

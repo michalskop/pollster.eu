@@ -1,9 +1,19 @@
 code: cz_president_2018_history
 content: index.en_US.html
 data: estimate/candidates_estimated.json
-description: '<p>History of prediction estimates shows how the election result was estimated at given day. <p>The predictions are based on candidates'' odds in Fortuna and Tipsport at that day. <p>The chart shows only candidates, whose chance to win was more than 7% at any time.'
+date: Dec 14, 2016
+description: '<p>History of prediction estimates shows how the election result was
+  estimated at given day. <p>The predictions are based on candidates'''' odds in Fortuna
+  and Tipsport at that day. <p>The chart shows only candidates, whose chance to win
+  was more than 7% at any time.
+
+  '
+fb: History of chances to win the Czech presidential elections 2017/2018
 language: en_US
 name: History of election predictions
+picture: pictures/picture.en_US.1481686613.3893569.png
 slug: czech-presidential-elections-2017-2018-history
-subname: history of probability of winning
+subname: probability of winning in time
 tags: [Experimental]
+thumbnail: pictures/thumbnail.en_US.1481686613.3893569.png
+timestamp: 1481686613.3893569

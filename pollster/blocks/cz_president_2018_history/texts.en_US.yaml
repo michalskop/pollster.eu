@@ -1,16 +1,17 @@
 ---
 # English texts
 picture_header: Next Czech President?
-picture_header_small: Chances to win in 2018
+picture_header_small: History of chances to win in 2018
 picture_info: Estimates based on odds from Fortuna and Tipsport
-name: Election prediction
-subname: probability of winning
+name: History of election predictions
+subname: probability of winning in time
 description: >
-    <p>This prediction estimates the results of the elections.
-    <p>The prediction is based on candidates' odds in Fortuna and Tipsport.
-fb: Current chances to win the Czech presidential elections 2017/2018:{first_candidate} has chance of {first_candidate_percents}%, {second_candidate} has chance of {second_candidate_percents}%.
-twitter: Czech president 2018-current chances:{first_candidate} {first_candidate_percents}%, {second_candidate} {second_candidate_percents}%. \#volby \#CZE
+    <p>History of prediction estimates shows how the election result was estimated at given day.
+    <p>The predictions are based on candidates'' odds in Fortuna and Tipsport at that day.
+    <p>The chart shows only candidates, whose chance to win was more than 7% at any time.
+fb: History of chances to win the Czech presidential elections 2017/2018
+twitter: Czech president 2018-history of chances \#volby \#CZE
 tags:
     - Experimental
-slug: czech-presidential-elections-2017-2018
+slug: czech-presidential-elections-2017-2018-history
 ...

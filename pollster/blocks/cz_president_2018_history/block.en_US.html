@@ -1,0 +1,68 @@
+
+    
+    
+    
+    
+        
+            <script src="http://pollster.eux/static/d3.min.js"></script>
+        
+            <script src="http://pollster.eux/static/jquery-3.1.1.slim.min.js"></script>
+        
+            <script src="http://pollster.eux/static/metricsgraphics.min.js"></script>
+        
+    
+
+    
+    
+        
+            <link href="http://pollster.eux/static/metricsgraphics.css" rel="stylesheet" />
+        
+    
+    
+    
+
+<script>
+d3.csv("/" + "blocks/cz_president_2018_history/" + 'estimate/candidates_estimated.csv', function(d) {
+    var data = [];
+    var name2col = {}
+    var names = []
+    var colors = []
+    for (var i = 0; i < d.length; i++) {
+        if (name2col[d[i]['name']] == undefined) {
+            name2col[d[i]['name']] = data.length;
+            data[name2col[d[i]['name']]] = []
+            names.push(d[i]['name'])
+            colors.push(d[i]['color'])
+        }
+        item = {
+            'date': d[i]['date'],
+            'value': d[i]['value']
+        }
+        data[name2col[d[i]['name']]].push(item);
+    }
+    for (var i = 0; i < data.length; i++) {
+        data[i] = MG.convert.date(data[i], 'date');
+    };
+    MG.data_graphic({
+        //title: "Line Chart",
+        //description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
+        data: data,
+        width: 765,
+        height: 397,
+        right: 60,
+        target: document.getElementById('chart'),
+        // animate_on_load: true,
+        missing_is_hidden: true,
+        x_extended_ticks: true,
+        y_extended_ticks: true,
+        legend: names,
+        colors: colors,
+        target: '#chart',
+        aggregate_rollover: true,
+        format: 'percentage',
+        decimals: 2
+    });
+});
+</script>
+
+<div id="chart"></div>
