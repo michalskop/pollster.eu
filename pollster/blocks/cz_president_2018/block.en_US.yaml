@@ -1,20 +1,20 @@
 code: cz_president_2018
 content: index.en_US.html
 data: estimate/candidates_estimated.json
-date: Dec 14, 2016
+date: Dec 18, 2016
 description: '<p>This prediction estimates the results of the elections. <p>The prediction
   is based on candidates'' odds in Fortuna and Tipsport.
 
   '
 fb: "Current chances to win the Czech presidential elections 2017/2018:Milo\u0161\
-  \ Zeman has chance of 33%, Michal Hor\xE1\u010Dek has chance of 24%."
+  \ Zeman has chance of 34%, Michal Hor\xE1\u010Dek has chance of 26%."
 language: en_US
 name: Election prediction
-picture: pictures/picture.en_US.1481684585.5388083.png
+picture: pictures/picture.en_US.1482030184.6739762.png
 slug: czech-presidential-elections-2017-2018
 subname: probability of winning
 tags: [Experimental]
-thumbnail: pictures/thumbnail.en_US.1481684585.5388083.png
-timestamp: 1481684585.5388083
-twitter: "Czech president 2018-current chances:Milo\u0161 Zeman 33%, Michal Hor\xE1\
-  \u010Dek 24%. \\#volby \\#CZE"
+thumbnail: pictures/thumbnail.en_US.1482030184.6739762.png
+timestamp: 1482030184.6739762
+twitter: "Czech president 2018-current chances:Milo\u0161 Zeman 34%, Michal Hor\xE1\
+  \u010Dek 26%. \\#volby \\#CZE"
