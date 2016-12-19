@@ -40,6 +40,9 @@ until = datetime.datetime.now()
 oneday = since
 history = {}
 while oneday < until:
+    # read candidates' info
+    with open(dir_path + settings.candidates_path + "candidates.json") as fin:
+        candidates = json.load(fin)
     # get last odds till oneday
     last_date = ''
     tipsport_odds = []
@@ -140,15 +143,16 @@ while oneday < until:
     oneday += datetime.timedelta(1)
 
 # select only those over threshold
+selecteds = {}
 selected_history = []
 for k in history:
-    selected = False
     for row in history[k]:
         if row['probability'] > settings.minimum:
-            selected = True
+            selecteds[k] = history[k][len(history[k])-1]['probability']
             break
-    if selected:
-        for row in history[k]:
+
+for tup in sorted(selecteds.items(), key=itemgetter(1), reverse=True):
+        for row in history[tup[0]]:
             selected_history.append(row)
 
 # save the file
