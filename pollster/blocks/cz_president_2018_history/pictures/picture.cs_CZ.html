@@ -3,12 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://pollster.eu/static/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://pollster.eux/static/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://pollster.eux/static/bootstrap-material-design.min.css" rel="stylesheet" />
+    <link href="http://pollster.eux/static/ripples.min.css" rel="stylesheet" />
+    <script src="http://pollster.eux/static/jquery-2.2.4.min.js"></script>
     
     
     
         
-            <link href="https://pollster.eu/static/metricsgraphics.css" rel="stylesheet" />
+            <link href="http://pollster.eux/static/metricsgraphics.css" rel="stylesheet" />
         
     
     
@@ -19,15 +22,13 @@
     
     
         
-            <script src="https://pollster.eu/static/d3.min.js"></script>
+            <script src="http://pollster.eux/static/d3.min.js"></script>
         
-            <script src="https://pollster.eu/static/jquery-3.1.1.slim.min.js"></script>
-        
-            <script src="https://pollster.eu/static/metricsgraphics.min.js"></script>
+            <script src="http://pollster.eux/static/metricsgraphics.min.js"></script>
         
     
 
-    <link href="https://pollster.eu/static/project.css" rel="stylesheet" />
+    <link href="http://pollster.eux/static/project.css" rel="stylesheet" />
 </head>
 <body style="max-width:952">
     <nav class="navbar navbar-inverse">
@@ -45,11 +46,13 @@
         </div>
     </nav>
 
-    
+    <div id="chart_cz_president_2018_history" style="position:relative;top:-50px;"></div>
+
+
     
     
         
-            <link href="https://pollster.eu/static/metricsgraphics.css" rel="stylesheet" />
+            <link href="http://pollster.eux/static/metricsgraphics.css" rel="stylesheet" />
         
     
     
@@ -60,64 +63,82 @@
     
     
         
-            <script src="https://pollster.eu/static/d3.min.js"></script>
+            <script src="http://pollster.eux/static/d3.min.js"></script>
         
-            <script src="https://pollster.eu/static/jquery-3.1.1.slim.min.js"></script>
-        
-            <script src="https://pollster.eu/static/metricsgraphics.min.js"></script>
+            <script src="http://pollster.eux/static/metricsgraphics.min.js"></script>
         
     
 
 <script>
-d3.csv("/" + "blocks/cz_president_2018_history/" + 'estimate/candidates_estimated.csv', function(d) {
-    var data = [];
-    var name2col = {}
-    var names = []
-    var colors = []
-    for (var i = 0; i < d.length; i++) {
-        if (name2col[d[i]['name']] == undefined) {
-            name2col[d[i]['name']] = data.length;
-            data[name2col[d[i]['name']]] = []
-            names.push(d[i]['name'])
-            colors.push(d[i]['color'])
-        }
-        item = {
-            'date': d[i]['date'],
-            'value': d[i]['value']
-        }
-        data[name2col[d[i]['name']]].push(item);
-    }
-    for (var i = 0; i < data.length; i++) {
-        data[i] = MG.convert.date(data[i], 'date');
-    };
-    MG.data_graphic({
-        //title: "Line Chart",
-        //description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
-        data: data,
-        width: 765,
-        height: 397,
-        right: 80,
-        target: document.getElementById('chart'),
-        // animate_on_load: true,
-        missing_is_hidden: true,
-        x_extended_ticks: true,
-        y_extended_ticks: true,
-        legend: names,
-        colors: colors,
-        target: '#chart_cz_president_2018_history',
-        aggregate_rollover: true,
-        format: 'percentage',
-        decimals: 2
-    });
-});
-</script>
+var $graphic = $("#chart_cz_president_2018_history");
+function drawGraphic() {
 
-<div id="chart_cz_president_2018_history" style="position:relative;top:-50px;"></div>
+    var margin = { top: 10, right: 10, bottom: 30, left: 30 };
+    var width = $graphic.width() - margin.left - margin.right;
+
+    d3.csv("/" + "blocks/cz_president_2018_history/" + 'estimate/candidates_estimated.csv', function(d) {
+        var data = [];
+        var name2col = {}
+        var names = []
+        var colors = []
+        for (var i = 0; i < d.length; i++) {
+            if (name2col[d[i]['name']] == undefined) {
+                name2col[d[i]['name']] = data.length;
+                data[name2col[d[i]['name']]] = []
+                names.push(d[i]['name'])
+                colors.push(d[i]['color'])
+            }
+            item = {
+                'date': d[i]['date'],
+                'value': d[i]['value']
+            }
+            data[name2col[d[i]['name']]].push(item);
+        }
+        for (var i = 0; i < data.length; i++) {
+            data[i] = MG.convert.date(data[i], 'date');
+        };
+        MG.data_graphic({
+            //title: "Line Chart",
+            //description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
+            data: data,
+            width: width, //765,
+            height: 397,
+            right: 80,
+            target: document.getElementById('chart'),
+            // animate_on_load: true,
+            missing_is_hidden: true,
+            x_extended_ticks: true,
+            y_extended_ticks: true,
+            legend: names,
+            colors: colors,
+            target: '#chart_cz_president_2018_history',
+            aggregate_rollover: true,
+            format: 'percentage',
+            decimals: 2
+        });
+    });
+}
+drawGraphic();
+window.onresize = drawGraphic;
+</script>
     <footer class="footer">
         <div>
-            <span class="badge">18. 12. 2016</span> <span class="label label-info">Odhady založené na kurzech Fortuny a Tipsportu</span>
+            <span class="badge">19. 12. 2016</span> <span class="label label-info">Odhady založené na kurzech Fortuny a Tipsportu</span>
         </div>
         <div>CC-BY-SA-NC Michal Škop, KohoVolit.eu, Pollster.eu</div>
     </footer>
+    <script>
+        
+$dynamicImages = $("[data-src]");
+
+$(window).resize(function() {
+    $dynamicImages.each(function(index) {
+        if ($(this).css('display') !== 'none') {
+            this.src = $(this).data('src');
+            //$dynamicImages.splice(index, 1)
+        }
+    });
+}).resize();
+    </script>
 </body>
 </html>

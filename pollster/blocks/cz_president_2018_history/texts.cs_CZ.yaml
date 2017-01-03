@@ -6,7 +6,7 @@ picture_info: Odhady založené na kurzech Fortuny a Tipsportu
 name: Historie volební predikce
 subname: pravděpodobnost vítězství v čase
 description: >
-    <p>Historický přehled volební predikce ukazuje, jaký byl odhad výsledku voleb v daný den. <p>Volební predikce je založena na kurzech na vítězství jednotlivých kandidátů ve Fortuně a Tipsportu v daný den.
+    <p>Historický přehled volební predikce ukazuje, jaký byl odhad výsledku voleb v daný den. <p>Uvedené hodnoty jsou šance kandidátů na celkové vítězství, nikoliv odhad jejich procentuálního zisku. <p>Volební predikce je založena na kurzech na vítězství jednotlivých kandidátů ve Fortuně a Tipsportu v daný den.
     <p>Graf ukazuje pouze kandidáty, jejichž šance někdy dosáhla alespoň 7 %.
 fb: Vývoj šancí na vítězství v prezidentských volbách 2017/2018.
 twitter: Prezident 2018-vývoj šancí \#volby

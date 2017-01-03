@@ -1,46 +1,55 @@
+<div id="chart_{{ settings['block_code'] }}" style="position:relative;top:-50px;"></div>
+
 {% include "include_in_head.html" %}
 <script>
-d3.csv("/" + "{{ settings['block_path_url'] }}" + 'estimate/candidates_estimated.csv', function(d) {
-    var data = [];
-    var name2col = {}
-    var names = []
-    var colors = []
-    for (var i = 0; i < d.length; i++) {
-        if (name2col[d[i]['name']] == undefined) {
-            name2col[d[i]['name']] = data.length;
-            data[name2col[d[i]['name']]] = []
-            names.push(d[i]['name'])
-            colors.push(d[i]['color'])
-        }
-        item = {
-            'date': d[i]['date'],
-            'value': d[i]['value']
-        }
-        data[name2col[d[i]['name']]].push(item);
-    }
-    for (var i = 0; i < data.length; i++) {
-        data[i] = MG.convert.date(data[i], 'date');
-    };
-    MG.data_graphic({
-        //title: "Line Chart",
-        //description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
-        data: data,
-        width: 765,
-        height: 397,
-        right: 80,
-        target: document.getElementById('chart'),
-        // animate_on_load: true,
-        missing_is_hidden: true,
-        x_extended_ticks: true,
-        y_extended_ticks: true,
-        legend: names,
-        colors: colors,
-        target: '#chart_{{ settings['block_code'] }}',
-        aggregate_rollover: true,
-        format: 'percentage',
-        decimals: 2
-    });
-});
-</script>
+var $graphic = $("#chart_{{ settings['block_code'] }}");
+function drawGraphic() {
 
-<div id="chart_{{ settings['block_code'] }}" style="position:relative;top:-50px;"></div>
+    var margin = { top: 10, right: 10, bottom: 30, left: 30 };
+    var width = $graphic.width() - margin.left - margin.right;
+
+    d3.csv("/" + "{{ settings['block_path_url'] }}" + 'estimate/candidates_estimated.csv', function(d) {
+        var data = [];
+        var name2col = {}
+        var names = []
+        var colors = []
+        for (var i = 0; i < d.length; i++) {
+            if (name2col[d[i]['name']] == undefined) {
+                name2col[d[i]['name']] = data.length;
+                data[name2col[d[i]['name']]] = []
+                names.push(d[i]['name'])
+                colors.push(d[i]['color'])
+            }
+            item = {
+                'date': d[i]['date'],
+                'value': d[i]['value']
+            }
+            data[name2col[d[i]['name']]].push(item);
+        }
+        for (var i = 0; i < data.length; i++) {
+            data[i] = MG.convert.date(data[i], 'date');
+        };
+        MG.data_graphic({
+            //title: "Line Chart",
+            //description: "This is a simple line chart. You can remove the area portion by adding area: false to the arguments list.",
+            data: data,
+            width: width, //765,
+            height: 397,
+            right: 80,
+            target: document.getElementById('chart'),
+            // animate_on_load: true,
+            missing_is_hidden: true,
+            x_extended_ticks: true,
+            y_extended_ticks: true,
+            legend: names,
+            colors: colors,
+            target: '#chart_{{ settings['block_code'] }}',
+            aggregate_rollover: true,
+            format: 'percentage',
+            decimals: 2
+        });
+    });
+}
+drawGraphic();
+window.onresize = drawGraphic;
+</script>

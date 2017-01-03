@@ -64,7 +64,7 @@ for lang in langs:
         fout.write(html)
 
     # generate png
-    cmd = 'xvfb-run --server-args="-screen 0, 1200x800x24" --auto-servernum /usr/bin/cutycapt --min-width=780 --min-height=528 --url=' + server_settings['app_url'] + settings['block_path_url'] + 'pictures/picture.' + lang + '.html --out=' + server_settings['app_dir'] + settings['block_path_url'] + 'pictures/picture.' + lang + '.' + str(stats.st_mtime) + '.png'
+    cmd = 'xvfb-run --server-args="-screen 0, 1200x800x24" --auto-servernum /usr/bin/cutycapt --min-width=780 --min-height=528 --url=' + server_settings['app_url'] + settings['block_path_url'] + 'pictures/picture.' + lang + '.html --out=' + server_settings['app_dir'] + settings['block_path_url'] + 'pictures/picture.' + lang + '.' + str(stats.st_mtime) + '.png --delay=3sd000'
     call_params = shlex.split(cmd)
     proc = subprocess.Popen(call_params)
 
@@ -74,7 +74,7 @@ for lang in langs:
     with open(dir_path + "../pictures/thumbnail." + lang + ".html","w") as fout:
         fout.write(html)
     # generate png
-    cmd = '/usr/bin/xvfb-run --server-args="-screen 0, 1200x800x24" --auto-servernum /usr/bin/cutycapt --min-width=780 --min-height=528 --url=' + server_settings['app_url'] + settings['block_path_url'] + 'pictures/thumbnail.' + lang + '.html --out=' + server_settings['app_dir'] + settings['block_path_url'] + 'pictures/bigthumbnail.' + lang + '.' + str(stats.st_mtime) + '.png'
+    cmd = '/usr/bin/xvfb-run --server-args="-screen 0, 1200x800x24" --auto-servernum /usr/bin/cutycapt --min-width=780 --min-height=528 --url=' + server_settings['app_url'] + settings['block_path_url'] + 'pictures/thumbnail.' + lang + '.html --out=' + server_settings['app_dir'] + settings['block_path_url'] + 'pictures/bigthumbnail.' + lang + '.' + str(stats.st_mtime) + '.png --delay=3000'
     call_params = shlex.split(cmd)
     proc = subprocess.Popen(call_params)
     proc.communicate()

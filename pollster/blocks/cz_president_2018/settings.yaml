@@ -11,4 +11,5 @@ block_reverse_path_dir: "../../../"
 # external + local css, js
 include_files:
     external_css:
-        - "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        # - "//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        -

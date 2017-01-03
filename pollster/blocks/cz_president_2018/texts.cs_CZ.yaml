@@ -7,7 +7,9 @@ name: Volební predikce
 subname: pravděpodobnost vítězství
 description: >
     <p>Tato volební predikce co nejlépe odhaduje, jak volby skutečně dopadnou.
+    <p>Uvedené hodnoty jsou šance kandidátů na celkové vítězství, nikoliv odhad jejich procentuálního zisku.
     <p>Volební predikce je založena na kurzech na vítězství jednotlivých kandidátů ve Fortuně a Tipsportu.
+    <p>Zobrazeno je prvních 12 kandidátů.
 fb: Aktuální šance na vítězství v prezidentských volbách 2017/2018:Největší šanci má {first_candidate} {first_candidate_percents}%, potom {second_candidate} {second_candidate_percents}%.
 twitter: Prezident 2018-aktuální šance:{first_candidate} {first_candidate_percents}%, {second_candidate} {second_candidate_percents}%. \#volby
 tags:

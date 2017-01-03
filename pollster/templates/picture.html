@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ server_settings.app_url }}static/bootstrap.min.css" rel="stylesheet" />
+    <link href="{{ server_settings.app_url }}static/bootstrap-material-design.min.css" rel="stylesheet" />
+    <link href="{{ server_settings.app_url }}static/ripples.min.css" rel="stylesheet" />
+    <script src="{{ server_settings.app_url }}static/jquery-2.2.4.min.js"></script>
     {% include 'include_in_head.html' %}
     <link href="{{ server_settings.app_url }}static/project.css" rel="stylesheet" />
 </head>
@@ -30,5 +33,8 @@
         </div>
         <div>{{ texts['licence'] }}</div>
     </footer>
+    <script>
+        {% include 'page_js.js' %}
+    </script>
 </body>
 </html>

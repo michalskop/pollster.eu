@@ -2,7 +2,14 @@
     color: #333;
 }
 .tag-label {
-    font-size: 0.25em;
+    font-size: 0.4em;
     position: relative;
     bottom: 3px;
+}
+.btn.btn-facebook {
+    background-color: #3b5998;
+    color: #eeeeee;
+}
+.btn.btn-raised.btn-facebook:hover, .btn.btn-raised.btn-facebook:active, .btn.btn-raised.btn-facebook:focus  {
+    background-color: #4b69a8;
 }

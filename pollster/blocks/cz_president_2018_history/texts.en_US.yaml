@@ -7,6 +7,7 @@ name: History of election predictions
 subname: probability of winning in time
 description: >
     <p>History of prediction estimates shows how the election result was estimated at given day.
+    <p>The values are chances to win the elections, not estimates of the percentual gains.
     <p>The predictions are based on candidates'' odds in Fortuna and Tipsport at that day.
     <p>The chart shows only candidates, whose chance to win was more than 7% at any time.
 fb: History of chances to win the Czech presidential elections 2017/2018

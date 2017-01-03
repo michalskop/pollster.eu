@@ -1,20 +1,23 @@
 code: cz_president_2018
 content: index.cs_CZ.html
 data: estimate/candidates_estimated.json
-date: 18. 12. 2016
+date: 19. 12. 2016
 description: "<p>Tato volebn\xED predikce co nejl\xE9pe odhaduje, jak volby skute\u010D\
-  n\u011B\_dopadnou. <p>Volebn\xED predikce je zalo\u017Eena na kurzech na v\xEDt\u011B\
-  zstv\xED jednotliv\xFDch kandid\xE1t\u016F ve Fortun\u011B\_a Tipsportu.\n"
+  n\u011B\_dopadnou. <p>Uveden\xE9 hodnoty jsou \u0161ance kandid\xE1t\u016F na celkov\xE9\
+  \ v\xEDt\u011Bzstv\xED, nikoliv odhad jejich procentu\xE1ln\xEDho zisku. <p>Volebn\xED\
+  \ predikce je zalo\u017Eena na kurzech na v\xEDt\u011Bzstv\xED jednotliv\xFDch kandid\xE1\
+  t\u016F ve Fortun\u011B\_a Tipsportu. <p>Zobrazeno je prvn\xEDch 12 kandid\xE1t\u016F\
+  .\n"
 fb: "Aktu\xE1ln\xED \u0161ance na v\xEDt\u011Bzstv\xED v prezidentsk\xFDch volb\xE1\
   ch 2017/2018:Nejv\u011Bt\u0161\xED \u0161anci m\xE1 Milo\u0161 Zeman 34%, potom\
   \ Michal Hor\xE1\u010Dek 26%."
 language: cs_CZ
 name: "Volebn\xED predikce"
-picture: pictures/picture.cs_CZ.1482030184.6739762.png
+picture: pictures/picture.cs_CZ.1482105799.542901.png
 slug: volba-prezidenta-cr-2017-2018
 subname: "pravd\u011Bpodobnost v\xEDt\u011Bzstv\xED"
 tags: ["Experiment\xE1ln\xED"]
-thumbnail: pictures/thumbnail.cs_CZ.1482030184.6739762.png
-timestamp: 1482030184.6739762
+thumbnail: pictures/thumbnail.cs_CZ.1482105799.542901.png
+timestamp: 1482105799.542901
 twitter: "Prezident 2018-aktu\xE1ln\xED \u0161ance:Milo\u0161 Zeman 34%, Michal Hor\xE1\
   \u010Dek 26%. \\#volby"
