@@ -8,7 +8,7 @@ subname: probability of winning in time
 description: >
     <p>History of prediction estimates shows how the election result was estimated at given day.
     <p>The values are chances to win the elections, not estimates of the percentual gains.
-    <p>The predictions are based on candidates'' odds in Fortuna and Tipsport at that day.
+    <p>The predictions are based on candidates'' odds in Fortuna and <a href="https://www.tipsport.cz/kurzy/spolecenske-sazky/spolecenske-sazky/prezidentske-volby-2018-v-cr-70696#type=ODDS&superSportId=&mySelection=false&sportGroupSelectedId=&underSportGroupId=&sportId=&competitionId=124314&formName=SportsForm?pid=10661&sid=12302&tid=2121&bid=3550" target="_blank">Tipsport</a> and Betfair at that day.
     <p>The chart shows only candidates, whose chance to win was more than 7% at any time.
 fb: History of chances to win the Czech presidential elections 2017/2018
 twitter: Czech president 2018-history of chances \#volby \#CZE

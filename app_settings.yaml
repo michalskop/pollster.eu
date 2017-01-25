@@ -13,4 +13,8 @@ pages:
 
 # fb app id
 fb_appid: "558663910989985"
+
+# piwik ids
+piwik_url: "//piwik.kohovolit.eu/"
+piwik_id: 3
 ...
