@@ -1,23 +1,24 @@
 code: cz_president_2018
 content: index.cs_CZ.html
 data: estimate/candidates_estimated.json
-date: 4. 1. 2017
+date: 25. 1. 2017
 description: "<p>Tato volebn\xED predikce co nejl\xE9pe odhaduje, jak volby skute\u010D\
   n\u011B\_dopadnou. <p>Uveden\xE9 hodnoty jsou \u0161ance kandid\xE1t\u016F na celkov\xE9\
   \ v\xEDt\u011Bzstv\xED, nikoliv odhad jejich procentu\xE1ln\xEDho zisku. <p>Volebn\xED\
   \ predikce je zalo\u017Eena na kurzech na v\xEDt\u011Bzstv\xED jednotliv\xFDch kandid\xE1\
-  t\u016F ve Fortun\u011B\_a Tipsportu. <p>Zobrazeno je prvn\xEDch 12 kandid\xE1t\u016F\
-  .\n"
+  t\u016F ve Fortun\u011B, <a href=\"https://www.tipsport.cz/kurzy/spolecenske-sazky/spolecenske-sazky/prezidentske-volby-2018-v-cr-70696#type=ODDS&superSportId=&mySelection=false&sportGroupSelectedId=&underSportGroupId=&sportId=&competitionId=124314&formName=SportsForm?pid=10661&sid=12302&tid=2121&bid=3550\"\
+  \ target=\"_blank\">Tipsportu</a> a Betfair. <p>Zobrazeno je prvn\xEDch 12 kandid\xE1\
+  t\u016F.\n"
 fb: "Aktu\xE1ln\xED \u0161ance na v\xEDt\u011Bzstv\xED v prezidentsk\xFDch volb\xE1\
-  ch 2017/2018:Nejv\u011Bt\u0161\xED \u0161anci m\xE1 Milo\u0161 Zeman 30%, potom\
-  \ Michal Hor\xE1\u010Dek 26%."
+  ch 2017/2018:Nejv\u011Bt\u0161\xED \u0161anci m\xE1 Milo\u0161 Zeman 36%, potom\
+  \ Michal Hor\xE1\u010Dek 23%."
 language: cs_CZ
 name: "Volebn\xED predikce"
-picture: pictures/picture.cs_CZ.1483498984.700511.png
+picture: pictures/picture.cs_CZ.1485310850.82074.png
 slug: volba-prezidenta-cr-2017-2018
 subname: "pravd\u011Bpodobnost v\xEDt\u011Bzstv\xED"
 tags: ["Experiment\xE1ln\xED"]
-thumbnail: pictures/thumbnail.cs_CZ.1483498984.700511.png
-timestamp: 1483498984.700511
-twitter: "Prezident 2018-aktu\xE1ln\xED \u0161ance:Milo\u0161 Zeman 30%, Michal Hor\xE1\
-  \u010Dek 26%. \\#volby"
+thumbnail: pictures/thumbnail.cs_CZ.1485310850.82074.png
+timestamp: 1485310850.82074
+twitter: "Prezident 2018-aktu\xE1ln\xED \u0161ance:Milo\u0161 Zeman 36%, Michal Hor\xE1\
+  \u010Dek 23%. \\#volby"

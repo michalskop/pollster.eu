@@ -4,6 +4,7 @@
     "image": "zeman.jpg",
     "fortuna_identifier": 60210,
     "tipsport_identifier": 4,
+    "betfair_identifier": 12112877,
     "color": "red"
 }, {
     "name": "Michal Horáček",
@@ -11,49 +12,57 @@
     "image": "horacek.jpg",
     "tipsport_identifier": 5,
     "fortuna_identifier": 60211,
+    "betfair_identifier": 12112878,
     "color": "blue"
 }, {
     "name": "Jan Švejnar",
     "abbreviation": "Švejnar",
     "image": "svejnar.jpg",
     "tipsport_identifier": 7,
-    "fortuna_identifier": 60212
+    "fortuna_identifier": 60212,
+    "betfair_identifier": 12112879
 }, {
     "name": "Tomáš Halík",
     "abbreviation": "Halík",
     "image": "halik.jpg",
     "tipsport_identifier": 19,
-    "fortuna_identifier": 60213
+    "fortuna_identifier": 60213,
+    "betfair_identifier": 12112880
 }, {
     "name": "Jiří Pospíšil",
     "abbreviation": "Pospíšil",
     "image": "pospisil.jpg",
     "tipsport_identifier": 6,
-    "fortuna_identifier": 60292
+    "fortuna_identifier": 60292,
+    "betfair_identifier": 12112881
 }, {
     "name": "Jiří Dienstbier",
     "abbreviation": "Dienstb.",
     "image": "dienstbier.jpg",
     "tipsport_identifier": 21,
-    "fortuna_identifier": 60293
+    "fortuna_identifier": 60293,
+    "betfair_identifier": 12113649
 }, {
     "name": "Pavel Rychetský",
     "abbreviation": "Rychetský",
     "image": "rychetsky.jpg",
     "tipsport_identifier": 8,
-    "fortuna_identifier": 60294
+    "fortuna_identifier": 60294,
+    "betfair_identifier": 12112882
 }, {
     "name": "Zuzana Roithová",
     "abbreviation": "Roithová",
     "image": "roithova.jpg",
     "tipsport_identifier": 18,
-    "fortuna_identifier": 60295
+    "fortuna_identifier": 60295,
+    "betfair_identifier": 12113648
 }, {
     "name": "Vladimír Dlouhý",
     "abbreviation": "Dlouhý",
     "image": "dlouhy.jpg",
     "tipsport_identifier": 17,
-    "fortuna_identifier": 60296
+    "fortuna_identifier": 60296,
+    "betfair_identifier": 12113647
 }, {
     "name": "Andrej Babiš",
     "abbreviation": "Babiš",
@@ -64,7 +73,8 @@
     "name": "Tomio Okamura",
     "abbreviation": "Okamura",
     "fortuna_identifier": 60298,
-    "tipsport_identifier": 29
+    "tipsport_identifier": 29,
+    "betfair_identifier": 12113641
 }, {
     "name": "Jaroslav Kubera",
     "abbreviation": "Kubera",
@@ -75,7 +85,8 @@
     "abbreviation": "Klaus",
     "image": "klaus.jpg",
     "tipsport_identifier": 13,
-    "fortuna_identifier": 60300
+    "fortuna_identifier": 60300,
+    "betfair_identifier": 12113399
 }, {
     "name": "Livia Klausová",
     "abbreviation": "Klausová",
@@ -83,15 +94,18 @@
 }, {
     "name": "Václav Klaus ml.",
     "abbreviation": "Klaus ml.",
-    "fortuna_identifier": 60302
+    "fortuna_identifier": 60302,
+    "betfair_identifier": 12121825
 }, {
     "name": "Zdeněk Škromach",
     "abbreviation": "Škromach",
-    "fortuna_identifier": 60303
+    "fortuna_identifier": 60303,
+    "betfair_identifier": 12113642
 }, {
     "name": "Petr Pavel",
     "abbreviation": "Pavel",
-    "fortuna_identifier": 60304
+    "fortuna_identifier": 60304,
+    "betfair_identifier": 12113643
 }, {
     "name": "Jaromír Jágr",
     "abbreviation": "Jágr",
@@ -129,7 +143,9 @@
     "abbreviation": "Stropnický",
     "image": "stropnicky.jpg",
     "tipsport_identifier": 15,
-    "fortuna_identifier": 60313
+    "fortuna_identifier": 60313,
+    "betfair_identifier": 12112884,
+    "color": "violet"
 }, {
     "name": "Marek Dalík",
     "abbreviation": "Dalík",
@@ -139,13 +155,15 @@
     "abbreviation": "Herman",
     "image": "herman.jpg",
     "tipsport_identifier": 9,
-    "fortuna_identifier": 60321
+    "fortuna_identifier": 60321,
+    "betfair_identifier": 12113644
 }, {
     "name": "Karel Schwarzenberg",
     "abbreviation": "Schwarz.",
     "image": "schwarzenberg.jpg",
     "tipsport_identifier": 16,
-    "fortuna_identifier": 60322
+    "fortuna_identifier": 60322,
+    "betfair_identifier": 12113646
 }, {
     "name": "Jan Kraus",
     "abbreviation": "Kraus",
@@ -178,9 +196,53 @@
     "name": "Šimon Pánek",
     "abbreviation": "Pánek",
     "tipsport_identifier": 14
-},
-{
+}, {
     "name": "Bohuslav Sobotka",
     "abbreviation": "Sobotka",
-    "tipsport_identifier": 11
+    "tipsport_identifier": 11,
+    "betfair_identifier": 12113654
+}, {
+    "name": "Jana Bobošíková",
+    "abbreviation": "Bobošíková",
+    "betfair_identifier": 12113650
+}, {
+    "name": "Jan Fisher",
+    "abbreviation": "Fisher",
+    "betfair_identifier": 12113651
+}, {
+    "name": "Taťána Fisherová",
+    "abbreviation": "Fisherová",
+    "betfair_identifier": 12113652
+}, {
+    "name": "Vladimír Špidla",
+    "abbreviation": "Špidla",
+    "betfair_identifier": 12113645
+}, {
+    "name": "Vladimír Franz",
+    "abbreviation": "Franz",
+    "betfair_identifier": 12113653
+}, {
+    "name": "Miroslav Kalousek",
+    "abbreviation": "Kalousek",
+    "betfair_identifier": 12113655
+}, {
+    "name": "Jan Kalvoda",
+    "abbreviation": "Kalvoda",
+    "betfair_identifier": 12117856
+}, {
+    "name": "Petr Pithart",
+    "abbreviation": "Pithart",
+    "betfair_identifier": 12117858
+}, {
+    "name": "Ivan Langer",
+    "abbreviation": "Langer",
+    "betfair_identifier": 12121746
+}, {
+    "name": "Josef Skála",
+    "abbreviation": "Skála",
+    "fortuna_identifier": 60910
+}, {
+    "name": "Jaromír Kohlíček",
+    "abbreviation": "Kohlíček",
+    "fortuna_identifier": 60911
 }]

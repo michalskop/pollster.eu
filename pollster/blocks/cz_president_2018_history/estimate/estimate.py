@@ -19,13 +19,15 @@ except:
 # read datapackages
 tipsport_dp = datapackage.DataPackage(settings.tipsport_dp_url)
 fortuna_dp = datapackage.DataPackage(settings.fortuna_dp_url)
+betfair_dp = datapackage.DataPackage(settings.betfair_dp_url)
 
 # read candidates' info
 with open(dir_path + settings.candidates_path + "candidates.json") as fin:
     candidates = json.load(fin)
 
+
 # get candidate by identifier
-def candidate_by_identifier(column,value):
+def candidate_by_identifier(column, value):
     for candidate in candidates:
         try:
             if candidate[column] == value:
@@ -62,22 +64,35 @@ while oneday < until:
         if row['date'] == last_date:
             fortuna_odds.append(row)
 
+    last_date = ''
+    betfair_odds = []
+    for row in betfair_dp.resources[0].data:
+        if row['date'] > last_date:
+            last_date = row['date']
+            betfair_odds = []
+        if row['date'] == last_date:
+            betfair_odds.append(row)
+
     # prepare inverses of odds, note new candidates
     news = {
+        "fortuna": 0,
+        "tipsport": 0,
+        "betfair": 0,
+        "image": 0,
         "color": ""
     }
     tipsport_exclude = [1, 48]
     for row in tipsport_odds:
         if row['identifier'] not in tipsport_exclude:
-            candidate = candidate_by_identifier('tipsport_identifier',row['identifier'])
+            candidate = candidate_by_identifier('tipsport_identifier', row['identifier'])
             if candidate:
                 row['odds'] = float(row['odds'])
                 candidate['tipsport_odds'] = row['odds']
-                candidate['tipsport_odds_inverse'] = 1/row['odds']
+                candidate['tipsport_odds_inverse'] = 1 / row['odds']
             else:
                 new_candidate = {
-                    "name":row['title'],
-                    "abbreviation":row['title'],
+                    "name": row['title'],
+                    "abbreviation": row['title'],
                     "tipsport_identifier": row['identifier']
                 }
                 new_candidate['tipsport_odds'] = None
@@ -86,21 +101,44 @@ while oneday < until:
                 news['tipsport'] += 1
 
     for row in fortuna_odds:
-        candidate = candidate_by_identifier('fortuna_identifier',row['identifier'])
+        candidate = candidate_by_identifier('fortuna_identifier', row['identifier'])
         if candidate:
             row['odds'] = float(row['odds'])
             candidate['fortuna_odds'] = row['odds']
-            candidate['fortuna_odds_inverse'] = 1/row['odds']
+            candidate['fortuna_odds_inverse'] = 1 / row['odds']
         else:
             new_candidate = {
-                "name":row['title'],
-                "abbreviation":row['title'],
+                "name": row['title'],
+                "abbreviation": row['title'],
                 "fortuna_identifier": row['identifier']
             }
             new_candidate['fortuna_odds'] = None
             new_candidate['fortuna_odds_inverse'] = 0
             candidates.append(new_candidate)
             news['fortuna'] += 1
+
+    for row in betfair_odds:
+        candidate = candidate_by_identifier('betfair_identifier', row['identifier'])
+        if candidate:
+            try:
+                row['odds'] = float(row['odds'])
+                if row['odds'] >= float(row['available_to_back_0']) and row['odds'] <= float(row['available_to_lay_0']):
+                    candidate['betfair_odds'] = row['odds']
+                    candidate['betfair_odds_inverse'] = 1 / row['odds']
+                    candidate['betfair_probability'] = candidate['betfair_odds_inverse']
+            except:
+                nothing = None
+        else:
+            new_candidate = {
+                "name": row['title'],
+                "abbreviation": row['title'],
+                "betfair_identifier": row['identifier']
+            }
+            new_candidate['betfair_odds'] = None
+            new_candidate['betfair_odds_inverse'] = 0
+            new_candidate['betfair_probability'] = 0
+            candidates.append(new_candidate)
+            news['betfair'] += 1
 
     # calculate probabilities based on odds
     tipsport_sum = 0
@@ -126,10 +164,13 @@ while oneday < until:
 
     # estimate probabilities
     for candidate in candidates:
-        if tipsport_sum > 0:
-            candidate['probability'] = round((candidate['tipsport_probability'] + candidate['fortuna_probability']) / 2 * 1000)/1000
-        else:
-            candidate['probability'] = round(candidate['fortuna_probability'] * 1000)/1000
+        try:
+            candidate['probability'] = round((candidate['tipsport_probability'] + candidate['fortuna_probability'] + candidate['betfair_probability']) / 3 * 1000) / 1000
+        except:
+            if tipsport_sum == 0:
+                candidate['probability'] = round((candidate['fortuna_probability']) * 1000) / 1000
+            else:
+                candidate['probability'] = round((candidate['tipsport_probability'] + candidate['fortuna_probability']) / 2 * 1000) / 1000
 
     for candidate in candidates:
         try:
@@ -148,7 +189,7 @@ selected_history = []
 for k in history:
     for row in history[k]:
         if row['probability'] > settings.minimum:
-            selecteds[k] = history[k][len(history[k])-1]['probability']
+            selecteds[k] = history[k][len(history[k]) - 1]['probability']
             break
 
 for tup in sorted(selecteds.items(), key=itemgetter(1), reverse=True):
@@ -156,9 +197,9 @@ for tup in sorted(selecteds.items(), key=itemgetter(1), reverse=True):
             selected_history.append(row)
 
 # save the file
-with open(dir_path + "candidates_estimated.csv","w") as fout:
+with open(dir_path + "candidates_estimated.csv", "w") as fout:
     csvw = csv.writer(fout)
-    csvw.writerow(['date','value','name','color'])
+    csvw.writerow(['date', 'value', 'name', 'color'])
     for row in selected_history:
         try:
             row['color']
@@ -166,8 +207,8 @@ with open(dir_path + "candidates_estimated.csv","w") as fout:
             row['color'] = '#666'
             news['color'] = 'missing color(s)'
         if row['probability'] > 0:
-            csvw.writerow([row['date'],row['probability'],row['abbreviation'],row['color']])
+            csvw.writerow([row['date'], row['probability'], row['abbreviation'], row['color']])
 
 # save news
-with open(dir_path + "news.txt","w") as fout:
+with open(dir_path + "news.txt", "w") as fout:
     fout.write(news['color'])

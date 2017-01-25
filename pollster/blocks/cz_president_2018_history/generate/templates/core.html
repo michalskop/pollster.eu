@@ -1,4 +1,4 @@
-<div id="chart_{{ settings['block_code'] }}" style="position:relative;top:-50px;"></div>
+<div id="chart_{{ settings['block_code'] }}" style="position:relative;top:-50px;height:357px"></div>
 
 {% include "include_in_head.html" %}
 <script>
@@ -35,7 +35,7 @@ function drawGraphic() {
             data: data,
             width: width, //765,
             height: 397,
-            right: 80,
+            right: 85,
             target: document.getElementById('chart'),
             // animate_on_load: true,
             missing_is_hidden: true,
