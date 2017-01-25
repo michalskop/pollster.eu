@@ -1,8 +1,8 @@
-<meta property="fb:app_id" content="" />
-<meta property="og:site_name" content="{{ page_settings }}" />
-<meta property="og:title" content="" />
+<meta property="fb:app_id" content="{{ app_settings['fb_appid'] }}" />
+<meta property="og:site_name" content="{{ texts['app_name'] }}" />
+<meta property="og:title" content="{{ texts['app_name'] }}" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="" />
+<meta property="og:url" content="{{ server_settings.app_url }}" />
 <meta property="og:image" content="{{ server_settings.app_url }}blocks/{{ blocks[0]['meta']['code'] }}/{{ blocks[0]['meta']['picture'] }}" />
 <meta property="og:locale" content="en_US" />
 <meta name="twitter:site:id" content="63359297" />
