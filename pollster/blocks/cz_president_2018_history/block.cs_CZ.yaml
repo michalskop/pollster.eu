@@ -1,7 +1,7 @@
 code: cz_president_2018_history
 content: index.cs_CZ.html
 data: estimate/candidates_estimated.json
-date: 25. 1. 2017
+date: 3. 3. 2017
 description: "<p>Historick\xFD p\u0159ehled volebn\xED predikce ukazuje, jak\xFD byl\
   \ odhad v\xFDsledku voleb v dan\xFD den. <p>Uveden\xE9 hodnoty jsou \u0161ance kandid\xE1\
   t\u016F na celkov\xE9 v\xEDt\u011Bzstv\xED, nikoliv odhad jejich procentu\xE1ln\xED\
@@ -13,9 +13,9 @@ fb: "V\xFDvoj \u0161anc\xED na v\xEDt\u011Bzstv\xED v prezidentsk\xFDch volb\xE1
   \ 2017/2018."
 language: cs_CZ
 name: "Historie volebn\xED predikce"
-picture: pictures/picture.cs_CZ.1485310889.2849555.png
+picture: pictures/picture.cs_CZ.1488510426.4058669.png
 slug: volba-prezidenta-cr-2017-2018-historie
 subname: "pravd\u011Bpodobnost v\xEDt\u011Bzstv\xED v \u010Dase"
 tags: ["Experiment\xE1ln\xED"]
-thumbnail: pictures/thumbnail.cs_CZ.1485310889.2849555.png
-timestamp: 1485310889.2849555
+thumbnail: pictures/thumbnail.cs_CZ.1488510426.4058669.png
+timestamp: 1488510426.4058669
