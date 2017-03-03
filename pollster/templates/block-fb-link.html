@@ -1,0 +1,8 @@
+https://www.facebook.com/dialog/feed?
+app_id={{ app_settings['fb_appid'] }}&
+link={{ server_settings['app_url'] }}?ref=&
+picture={{ url_for('get_picture', page=settings["code"], subpage=block['meta']['code'], filename= block['meta']['picture'], _external=True) }}&
+yyy={{ url_for('get_picture', page='cz', subpage='cz_president_2018', filename=block['meta']['picture'], _external=True) }}&
+name={{ block['meta']['name'] }}&
+description={{ block['meta']['fb'] }}&
+redirect_uri={{ server_settings['app_url'] }}

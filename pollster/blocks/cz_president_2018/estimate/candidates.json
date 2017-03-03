@@ -245,4 +245,11 @@
     "name": "Jaromír Kohlíček",
     "abbreviation": "Kohlíček",
     "fortuna_identifier": 60911
+}, {
+    "name": "Jiří Drahoš",
+    "abbreviation": "Drahoš",
+    "image": "drahos.jpg",
+    "fortuna_identifier": 61111,
+    "tipsport_identifier": 26,
+    "color": "#009bde"
 }]
