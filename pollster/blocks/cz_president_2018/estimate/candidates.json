@@ -72,6 +72,7 @@
 }, {
     "name": "Tomio Okamura",
     "abbreviation": "Okamura",
+    "image": "okamura.jpg",
     "fortuna_identifier": 60298,
     "tipsport_identifier": 29,
     "betfair_identifier": 12113641
@@ -252,4 +253,12 @@
     "fortuna_identifier": 61111,
     "tipsport_identifier": 26,
     "color": "#009bde"
+},{
+    "name": "Jiří Dolejš",
+    "abbreviation": "Dolejš",
+    "fortuna_identifier": 60907
+},{
+    "name": "Pavel Kováčik",
+    "abbreviation": "Kováčik",
+    "fortuna_identifier": 60909
 }]
