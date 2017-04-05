@@ -1,7 +1,7 @@
 code: cz_president_2018
 content: index.cs_CZ.html
 data: estimate/candidates_estimated.json
-date: 3. 4. 2017
+date: 5. 4. 2017
 description: "<p>Tato volebn\xED predikce co nejl\xE9pe odhaduje, jak volby skute\u010D\
   n\u011B\_dopadnou. <p>Uveden\xE9 hodnoty jsou \u0161ance kandid\xE1t\u016F na celkov\xE9\
   \ v\xEDt\u011Bzstv\xED, nikoliv odhad jejich procentu\xE1ln\xEDho zisku. <p>Volebn\xED\
@@ -10,15 +10,15 @@ description: "<p>Tato volebn\xED predikce co nejl\xE9pe odhaduje, jak volby skut
   \ target=\"_blank\">Tipsportu</a> a Betfair. <p>Zobrazeno je prvn\xEDch 12 kandid\xE1\
   t\u016F.\n"
 fb: "Aktu\xE1ln\xED \u0161ance na v\xEDt\u011Bzstv\xED v prezidentsk\xFDch volb\xE1\
-  ch 2017/2018:Nejv\u011Bt\u0161\xED \u0161anci m\xE1 Milo\u0161 Zeman 51%, potom\
-  \ Ji\u0159\xED Draho\u0161 23%."
+  ch 2017/2018:Nejv\u011Bt\u0161\xED \u0161anci m\xE1 Milo\u0161 Zeman 52%, potom\
+  \ Ji\u0159\xED Draho\u0161 22%."
 language: cs_CZ
 name: "Volebn\xED predikce"
-picture: pictures/picture.cs_CZ.1491188589.4298148.png
+picture: pictures/picture.cs_CZ.1491361387.9108675.png
 slug: volba-prezidenta-cr-2017-2018
 subname: "pravd\u011Bpodobnost v\xEDt\u011Bzstv\xED"
 tags: ["Experiment\xE1ln\xED"]
-thumbnail: pictures/thumbnail.cs_CZ.1491188589.4298148.png
-timestamp: 1491188589.4298148
-twitter: "Prezident 2018-aktu\xE1ln\xED \u0161ance:Milo\u0161 Zeman 51%, Ji\u0159\xED\
-  \ Draho\u0161 23%. \\#volby"
+thumbnail: pictures/thumbnail.cs_CZ.1491361387.9108675.png
+timestamp: 1491361387.9108675
+twitter: "Prezident 2018-aktu\xE1ln\xED \u0161ance:Milo\u0161 Zeman 52%, Ji\u0159\xED\
+  \ Draho\u0161 22%. \\#volby"
