@@ -1,7 +1,7 @@
 code: cz_president_2018
 content: index.en_US.html
 data: estimate/candidates_estimated.json
-date: Apr 5, 2017
+date: Apr 8, 2017
 description: '<p>This prediction estimates the results of the elections. <p>The values
   are chances to win the elections, not estimates of the percentual gains. <p>The
   prediction is based on candidates'' odds in Fortuna, <a href="https://www.tipsport.cz/kurzy/spolecenske-sazky/spolecenske-sazky/prezidentske-volby-2018-v-cr-70696#type=ODDS&superSportId=&mySelection=false&sportGroupSelectedId=&underSportGroupId=&sportId=&competitionId=124314&formName=SportsForm?pid=10661&sid=12302&tid=2121&bid=3550"
@@ -9,14 +9,14 @@ description: '<p>This prediction estimates the results of the elections. <p>The 
 
   '
 fb: "Current chances to win the Czech presidential elections 2017/2018:Milo\u0161\
-  \ Zeman has chance of 52%, Ji\u0159\xED Draho\u0161 has chance of 22%."
+  \ Zeman has chance of 48%, Ji\u0159\xED Draho\u0161 has chance of 26%."
 language: en_US
 name: Election prediction
-picture: pictures/picture.en_US.1491361387.9108675.png
+picture: pictures/picture.en_US.1491620587.908369.png
 slug: czech-presidential-elections-2017-2018
 subname: probability of winning
 tags: [Experimental]
-thumbnail: pictures/thumbnail.en_US.1491361387.9108675.png
-timestamp: 1491361387.9108675
-twitter: "Czech president 2018-current chances:Milo\u0161 Zeman 52%, Ji\u0159\xED\
-  \ Draho\u0161 22%. \\#volby \\#CZE"
+thumbnail: pictures/thumbnail.en_US.1491620587.908369.png
+timestamp: 1491620587.908369
+twitter: "Czech president 2018-current chances:Milo\u0161 Zeman 48%, Ji\u0159\xED\
+  \ Draho\u0161 26%. \\#volby \\#CZE"
