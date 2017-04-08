@@ -233,6 +233,7 @@
 }, {
     "name": "Petr Pithart",
     "abbreviation": "Pithart",
+    "image": "pithart.jpg",
     "fortuna_identifier": 61248,
     "betfair_identifier": 12117858
 }, {
@@ -266,5 +267,6 @@
 },{
     "name": "Karel Štogl",
     "abbreviation": "Štogl",
+    "image": "stogl.jpg",
     "fortuna_identifier": 61255
 }]
