@@ -1,1 +1,1 @@
-new image: 2,
+new fortuna: 3,new tipsport: 3,
