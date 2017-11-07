@@ -135,7 +135,10 @@
 }, {
     "name": "Marek Hilšer",
     "abbreviation": "Hilšer",
-    "fortuna_identifier": 60311
+    "fortuna_identifier": 60311,
+    "tipsport_identifier": 45,
+    "image": "hilser.jpg",
+    "color": "violet"
 }, {
     "name": "Vladimír Špidla",
     "abbreviation": "Špidla",
@@ -270,4 +273,40 @@
     "abbreviation": "Štogl",
     "image": "stogl.jpg",
     "fortuna_identifier": 61255
-}]
+},{
+    "name": "Mirek Topolánek",
+    "abbreviation": "Topolánek",
+    "image": "topolanek.jpg",
+    "fortuna_identifier": 65460,
+    "tipsport_identifier": 59,
+    "color": "#004494"
+},{
+    "name": "Vratislav Kulhánek",
+    "abbreviation": "Kulhánek",
+    "image": "kulhanek.jpg",
+    "fortuna_identifier": 65458,
+    "tipsport_identifier": 52,
+    "color": "#002d72"
+},{
+    "name": "Petr Hannig",
+    "abbreviation": "Hannig",
+    "image": "hannig.jpg",
+    "fortuna_identifier": 65458,
+    "tipsport_identifier": 53,
+    "color": "#002d72"
+},{
+    "name": "Pavel Fischer",
+    "abbreviation": "Fischer",
+    "image": "fischer.jpg",
+    "fortuna_identifier": 65463,
+    "tipsport_identifier": 57,
+    "color": "#6fb7c5"
+},{
+    "name": "Jiří Hynek",
+    "abbreviation": "Hynek",
+    "image": "hynek.jpg",
+    "fortuna_identifier": 65462,
+    "tipsport_identifier": 58,
+    "color": "#013888"
+}
+]
