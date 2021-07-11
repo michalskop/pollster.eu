@@ -1,5 +1,5 @@
 Flask>=0.11.1
 flask_cache>=0.13.1
 lxml
-datapackage>=0.8.4
+datapackage>=0.8.4,<1.0
 babel>=2.3.4
